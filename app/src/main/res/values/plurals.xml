@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <plurals name="sensors_summary">
+        <item quantity="zero">You have no sensors  ;( </item>
+        <item quantity="one">You have only one sensor ;/ </item>
+        <item quantity="other">You have %d sensors </item>
+    </plurals>
+</resources>

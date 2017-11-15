@@ -19,12 +19,12 @@ import kotlinx.android.synthetic.main.main_fragment.*
 class MainFragment : Fragment(), SensorEventListener {
     private lateinit var sensorManager: SensorManager
     private lateinit var deviceSensors: List<Sensor>
-    override fun onCreateView(inflater: LayoutInflater?, container: ViewGroup?, savedInstanceState: Bundle?): View {
+    override fun onCreateView(inflater: LayoutInflater, container: ViewGroup?, savedInstanceState: Bundle?): View? {
         return inflater!!.inflate(R.layout.main_fragment, container, false)
     }
 
-    override fun onViewCreated(view: View?, savedInstanceState: Bundle?) {
-        sensorManager = activity.getSystemService(Context.SENSOR_SERVICE) as SensorManager
+    override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
+        sensorManager = activity!!.getSystemService(Context.SENSOR_SERVICE) as SensorManager
         deviceSensors = sensorManager.getSensorList(Sensor.TYPE_ALL)
         super.onViewCreated(view, savedInstanceState)
         sensorsQuantity.text = resources.getQuantityString(R.plurals.sensors_summary, deviceSensors.size, deviceSensors.size)

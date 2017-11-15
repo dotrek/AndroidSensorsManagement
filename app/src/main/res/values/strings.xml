@@ -1,4 +1,8 @@
 <resources>
     <string name="app_name">HardwareResources</string>
     <string name="nextbutton">Next excercise</string>
+    <string name="kwadracik">Kwadracik</string>
+    <string name="dont">Dont do it or i will close the app</string>
+    <string name="previous">Previous</string>
+
 </resources>

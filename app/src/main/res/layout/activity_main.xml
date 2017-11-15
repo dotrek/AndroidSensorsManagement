@@ -6,16 +6,5 @@
     android:layout_height="match_parent"
     tools:context="com.example.dotre.hardwareresources.MainActivity">
 
-    <fragment
-        android:id="@+id/fragmentID"
-        android:name="com.example.dotre.hardwareresources.MainFragment"
-        android:layout_width="match_parent"
-        android:layout_height="match_parent" />
-
-    <!--<fragment-->
-        <!--android:name="com.example.dotre.hardwareresources.ProximitySensorFragment"-->
-        <!--android:id="@+id/proximitySensorFragment"-->
-        <!--android:layout_width="match_parent"-->
-        <!--android:layout_height="match_parent" />-->
 </RelativeLayout>
 
